@@ -4,11 +4,7 @@
 # places it in ~/history_backups/ directory
 # names it after the date that the commands were executed on
 # in YYMMDD format
-#
-# SETUP:
-#	$mkdir -p ~/history_backups
-#	$date +"%y%m%d" > ~/history_backups/naming
-#	and, add the path to this script to your .bash_profile, .profile, etc.
+
 	
 
 HISTORY_FILE="$HOME/.bash_history"
