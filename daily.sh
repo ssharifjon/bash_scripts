@@ -15,7 +15,7 @@ if [ $pd != $td ]; then
 	cp $HOME/.bash_history $HOME/history_backups/$pd	
 	truncate -s 0 $HOME/.bash_history
 
-	sudo du --exclude=/{proc,sys,dev,run,tmp,var/cache,nix,home/ss/daily_scans,home/ss/history_backups} -aS / > $s2
+	sudo du --exclude=/{proc,sys,dev,run,tmp,var/cache,nix,home/ss/daily_scans,home/ss/history_backups,home/ss/.cache} -aS / > $s2
 	diff -y --suppress-common-lines --width=250 $s1 $s2 > $HOME/daily_scans/d_$pd
 	mv $s2 $s1
 
